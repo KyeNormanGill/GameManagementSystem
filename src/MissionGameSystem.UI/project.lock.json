@@ -4358,6 +4358,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "MissionGameSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netcoreapp1.0/MissionGameSystem.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/MissionGameSystem.dll": {}
+        }
       }
     }
   },
@@ -11016,6 +11032,11 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "MissionGameSystem/1.0.0": {
+      "type": "project",
+      "path": "../MissionGameSystem/project.json",
+      "msbuildProject": "../MissionGameSystem/MissionGameSystem.xproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11043,7 +11064,8 @@
       "Microsoft.NETCore.App >= 1.0.1",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-final",
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-final"
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-final",
+      "MissionGameSystem >= 1.0.0-*"
     ],
     ".NETCoreApp,Version=v1.0": []
   },
