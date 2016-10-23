@@ -141,4 +141,10 @@ C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\Mission
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Mission.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\MissionGameSystemDbContext.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Prize.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161022121751_InitialCreate.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161022121751_InitialCreate.Designer.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\MissionGameSystemDbContextModelSnapshot.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Properties\AssemblyInfo.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\ContestantApplicationService.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\MissionApplicationService.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\PrizeApplicationService.cs

@@ -12,5 +12,10 @@ namespace MissionGameSystem.DataAccess.Models
         public DbSet<Game> Games { get; set; }
         public DbSet<Mission> Missions { get; set; }
         public DbSet<Prize> Prizes { get; set; }
+       
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Data Source=(LocalDb)\mssqllocaldb;Initial Catalog=GameManagementSystemDb;Integrated Security=true;");
+        }
     }
 }
