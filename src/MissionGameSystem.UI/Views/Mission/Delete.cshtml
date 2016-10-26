@@ -1,4 +1,4 @@
-@model MissionGameSystem.UI.Models.ContestantViewModels.ContestantDeleteViewModel
+@model MissionGameSystem.UI.Models.MissionViewModels.MissionDeleteViewModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -8,14 +8,14 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>ContestantDeleteViewModel</h4>
+    <h4>MissionDeleteViewModel</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Description)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.Description)
         </dd>
     </dl>
     

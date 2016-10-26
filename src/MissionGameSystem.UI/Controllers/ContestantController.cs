@@ -22,7 +22,7 @@ namespace MissionGameSystem.UI.Controllers
         }
 
         // GET: Contestant
-        public ActionResult Index()
+        public IActionResult Index()
         {
             var contestants = _context.Contestants.Select(c => new ContestantIndexViewModel()
             {

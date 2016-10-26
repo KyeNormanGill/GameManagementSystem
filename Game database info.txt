@@ -1,7 +1,10 @@
 Contestant:
 	- Id
-	- Name
-	- Age
+	- First Name
+	- Last Name
+	- Address (optional)
+	- Phone Number (optional)
+	- Date Of Birth
 	- Mood
 	- Games won
 

@@ -231,6 +231,7 @@ C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\Mission
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\ContestantController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\GameController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\ManageController.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\MissionController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Data\ApplicationDbContext.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Data\Migrations\00000000000000_CreateIdentitySchema.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
@@ -257,6 +258,11 @@ C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\Mission
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\RemoveLoginViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\SetPasswordViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\MissionViewModels\MissionCreateViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\MissionViewModels\MissionDeleteViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\MissionViewModels\MissionDetailsViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\MissionViewModels\MissionIndexViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\MissionViewModels\MissionUpdateViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Services\IEmailSender.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Services\ISmsSender.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Services\MessageServices.cs
