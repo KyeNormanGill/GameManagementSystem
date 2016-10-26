@@ -10,26 +10,7 @@ namespace MissionGameSystem.UI.Controllers
     {
         public IActionResult Index()
         {
-            //ToDo : Check whether or not a game is *active* if so post missions and contestants
-            return View();
-        }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Error()
-        {
             return View();
         }
     }

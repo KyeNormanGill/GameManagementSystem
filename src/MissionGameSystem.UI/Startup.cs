@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using MissionGameSystem.UI.Data;
 using MissionGameSystem.UI.Models;
 using MissionGameSystem.UI.Services;
+using MissionGameSystem.Services;
+using MissionGameSystem.DataAccess.Models;
 
 namespace MissionGameSystem.UI
 {
@@ -47,6 +49,10 @@ namespace MissionGameSystem.UI
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddDbContext<MissionGameSystemDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<ContestantApplicationService>();
             services.AddMvc();
 
             // Add application services.

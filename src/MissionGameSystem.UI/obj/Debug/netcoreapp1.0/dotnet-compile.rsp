@@ -228,6 +228,7 @@
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Program.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Startup.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\AccountController.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\ContestantController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\GameController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Controllers\ManageController.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Data\ApplicationDbContext.cs
@@ -242,6 +243,9 @@ C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\Mission
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\AccountViewModels\ResetPasswordViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\AccountViewModels\SendCodeViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\AccountViewModels\VerifyCodeViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantCreateViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantIndexViewModel.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantUpdateViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\AddPhoneNumberViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\ChangePasswordViewModel.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
