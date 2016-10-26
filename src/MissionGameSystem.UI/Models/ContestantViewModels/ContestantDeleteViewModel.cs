@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace MissionGameSystem.UI.Models.ContestantViewModels
 {
-    public class ContestantUpdateViewModel
+    public class ContestantDeleteViewModel
     {
         public int Id { get; set; }
-        public string Mood { get; set; }
+        public string Name { get; set; }
     }
 }

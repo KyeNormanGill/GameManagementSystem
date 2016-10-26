@@ -26,6 +26,7 @@ namespace MissionGameSystem.UI.Controllers
         {
             var contestants = _context.Contestants.Select(c => new ContestantIndexViewModel()
             {
+                Id = c.Id,
                 Name = c.Name,
                 Age = c.Age,
                 //Take out age
@@ -45,15 +46,14 @@ namespace MissionGameSystem.UI.Controllers
             }
 
             var contestant = await _contestantService.GetContestant(id);
-            var model = new ContestantIndexViewModel()
+            var model = new ContestantDetailsViewModel()
             {
                 Name = contestant.Name,
                 Age = contestant.Age,
                 Mood = contestant.Mood,
-                //Take out mood
                 GamesWon = contestant.GamesWon
             };
-            return View();
+            return View(model);
         }
 
         // GET: Contestant/Create
@@ -64,7 +64,6 @@ namespace MissionGameSystem.UI.Controllers
 
         // POST: Contestant/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ContestantCreateViewModel model)
         {
             if(ModelState.IsValid)
@@ -84,7 +83,6 @@ namespace MissionGameSystem.UI.Controllers
             }
             var model = await _context.Contestants.Where(c => c.Id == id).Select(c => new ContestantUpdateViewModel
             {
-                Name = c.Name,
                 Mood = c.Mood,
             }).FirstOrDefaultAsync();
             return View(model);
@@ -100,33 +98,33 @@ namespace MissionGameSystem.UI.Controllers
             }
             if(ModelState.IsValid)
             {
-                await _contestantService.Edit(id, model.Name, model.Mood);
+                await _contestantService.Edit(id, model.Mood);
                 return RedirectToAction("Index");
             }
             return View(model);
         }
 
         // GET: Contestant/Delete/5
-        public ActionResult Delete(int id)
+        public IActionResult Delete(int? id)
         {
-            return View();
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var model = _context.Contestants.Where(c => c.Id == id).Select(contestant => new ContestantDeleteViewModel()
+            {
+                Name = contestant.Name
+            }).FirstOrDefault();
+            return View(model);
         }
 
         // POST: Contestant/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            var contestant = await _context.Contestants.FirstOrDefaultAsync(c => c.Id == id);
+            await _contestantService.Delete(contestant.Id);
+            return RedirectToAction("Index");
         }
     }
 }

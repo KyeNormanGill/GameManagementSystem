@@ -240,6 +240,8 @@
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\AccountViewModels\SendCodeViewModel.cs"
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\AccountViewModels\VerifyCodeViewModel.cs"
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantCreateViewModel.cs"
+"C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantDeleteViewModel.cs"
+"C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantDetailsViewModel.cs"
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantIndexViewModel.cs"
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ContestantViewModels\ContestantUpdateViewModel.cs"
 "C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem.UI\Models\ManageViewModels\AddPhoneNumberViewModel.cs"

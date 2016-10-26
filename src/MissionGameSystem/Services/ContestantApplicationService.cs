@@ -40,10 +40,9 @@ namespace MissionGameSystem.Services
         }
 
         //Create a new Contestant object from the database with the same Id given, assign the new parameters from the method, save it, and return it.
-        public async Task<Contestant> Edit(int id, string name, string mood)
+        public async Task<Contestant> Edit(int id, string mood)
         {
             var contestant = await _context.Contestants.FirstOrDefaultAsync(c => c.Id == id);
-            contestant.Name = name;
             contestant.Mood = mood;
 
             await _context.SaveChangesAsync();
