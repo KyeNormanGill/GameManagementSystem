@@ -138,10 +138,14 @@
 --reference:C:\Users\Kye\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Contestant.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Game.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Game_Contestant.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Game_Mission.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Mission.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\MissionGameSystemDbContext.cs
-C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\DataAccess\Models\Prize.cs
-C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161022121751_InitialCreate.cs
-C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161022121751_InitialCreate.Designer.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161109225254_InitialCreate.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\20161109225254_InitialCreate.Designer.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Migrations\MissionGameSystemDbContextModelSnapshot.cs
 C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Properties\AssemblyInfo.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\ContestantApplicationService.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\GameApplicationService.cs
+C:\Users\Kye\Documents\Visual Studio 2015\Projects\MissionGameSystem\src\MissionGameSystem\Services\MissionApplicationService.cs

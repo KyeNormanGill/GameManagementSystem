@@ -8,9 +8,10 @@ using MissionGameSystem.DataAccess.Models;
 namespace MissionGameSystem.Migrations
 {
     [DbContext(typeof(MissionGameSystemDbContext))]
-    partial class MissionGameSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20161109225254_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

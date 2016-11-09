@@ -24,12 +24,15 @@ namespace MissionGameSystem.Services
         }
 
         //Create a new Contestant object and assign the parameters with the one parsed in the method. save it, and return it.
-        public async Task<Contestant> Create(string name, int age, string mood)
+        public async Task<Contestant> Create(string firstName, string lastName, string address, string phoneNumber, DateTime dateOfBirth, string mood)
         {
             var contestant = new Contestant()
             {
-                Name = name,
-                Age = age,
+                Firstname = firstName,
+                Lastname = lastName,
+                Address = address,
+                PhoneNumber = phoneNumber,
+                DateOfBirth = dateOfBirth,
                 Mood = mood,
                 GamesWon = 0
             };
@@ -40,9 +43,11 @@ namespace MissionGameSystem.Services
         }
 
         //Create a new Contestant object from the database with the same Id given, assign the new parameters from the method, save it, and return it.
-        public async Task<Contestant> Edit(int id, string mood)
+        public async Task<Contestant> Edit(int id, string address, string phoneNumber ,string mood)
         {
             var contestant = await _context.Contestants.FirstOrDefaultAsync(c => c.Id == id);
+            contestant.Address = address;
+            contestant.PhoneNumber = phoneNumber;
             contestant.Mood = mood;
 
             await _context.SaveChangesAsync();

@@ -11,7 +11,6 @@ namespace MissionGameSystem.DataAccess.Models
         public DbSet<Contestant> Contestants { get; set; }
         public DbSet<Game> Games { get; set; }
         public DbSet<Mission> Missions { get; set; }
-        public DbSet<Prize> Prizes { get; set; }
        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

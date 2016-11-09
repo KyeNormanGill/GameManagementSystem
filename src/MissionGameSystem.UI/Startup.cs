@@ -53,7 +53,8 @@ namespace MissionGameSystem.UI
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<ContestantApplicationService>()
-                .AddScoped<MissionApplicationService>();
+                .AddScoped<MissionApplicationService>()
+                .AddScoped<GameApplicationService>();
             services.AddMvc();
 
             // Add application services.

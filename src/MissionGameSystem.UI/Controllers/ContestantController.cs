@@ -27,11 +27,8 @@ namespace MissionGameSystem.UI.Controllers
             var contestants = _context.Contestants.Select(c => new ContestantIndexViewModel()
             {
                 Id = c.Id,
-                Name = c.Name,
-                Age = c.Age,
-                //Take out age
-                Mood = c.Mood,
-                //Take out mood
+                FirstName = c.Firstname,
+                LastName = c.Lastname,
                 GamesWon = c.GamesWon
             }).ToList();
             return View(contestants);
@@ -48,8 +45,11 @@ namespace MissionGameSystem.UI.Controllers
             var contestant = await _contestantService.GetContestant(id);
             var model = new ContestantDetailsViewModel()
             {
-                Name = contestant.Name,
-                Age = contestant.Age,
+                FirstName = contestant.Firstname,
+                LastName = contestant.Lastname,
+                Address = contestant.Address,
+                PhoneNumber = contestant.PhoneNumber,
+                DateOfBirth = contestant.DateOfBirth,
                 Mood = contestant.Mood,
                 GamesWon = contestant.GamesWon
             };
@@ -68,7 +68,7 @@ namespace MissionGameSystem.UI.Controllers
         {
             if(ModelState.IsValid)
             {
-                await _contestantService.Create(model.Name, model.Age, model.Mood);
+                await _contestantService.Create(model.Firstname, model.Lastname, model.Address, model.PhoneNumber, model.DateOfBirth, model.Mood);
                 return RedirectToAction("Index");
             }
             return View(model);
@@ -83,7 +83,9 @@ namespace MissionGameSystem.UI.Controllers
             }
             var model = await _context.Contestants.Where(c => c.Id == id).Select(c => new ContestantUpdateViewModel
             {
-                Mood = c.Mood,
+                Address = c.Address,
+                PhoneNumber = c.PhoneNumber,
+                Mood = c.Mood
             }).FirstOrDefaultAsync();
             return View(model);
         }
@@ -98,7 +100,7 @@ namespace MissionGameSystem.UI.Controllers
             }
             if(ModelState.IsValid)
             {
-                await _contestantService.Edit(id, model.Mood);
+                await _contestantService.Edit(id,model.Address, model.PhoneNumber, model.Mood);
                 return RedirectToAction("Index");
             }
             return View(model);
@@ -113,7 +115,7 @@ namespace MissionGameSystem.UI.Controllers
             }
             var model = _context.Contestants.Where(c => c.Id == id).Select(contestant => new ContestantDeleteViewModel()
             {
-                Name = contestant.Name
+                Name = contestant.Firstname + " " + contestant.Lastname
             }).FirstOrDefault();
             return View(model);
         }

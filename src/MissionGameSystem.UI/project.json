@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-MissionGameSystem.UI-af808573-ec72-465b-a647-ca89016cd3c5",
 
   "dependencies": {
@@ -44,8 +44,7 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "MissionGameSystem": "1.0.0-*"
-  },
+    "MissionGameSystem": "1.0.0-*"  },
 
   "tools": {
     "BundlerMinifier.Core": "2.0.238",

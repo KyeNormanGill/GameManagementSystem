@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace MissionGameSystem.DataAccess.Models
+namespace MissionGameSystem.HookIn
 {
-    public class Game_Prize
+    class Program
     {
+        //To:Do Make hookin for a game
     }
 }
